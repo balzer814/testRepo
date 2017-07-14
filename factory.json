@@ -1,0 +1,92 @@
+{
+  "v": "4.0",
+  "name": "myFac",
+  "workspace": {
+    "environments": {
+      "che": {
+        "machines": {
+          "ws-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            },
+            "servers": {},
+            "agents": [
+              "org.eclipse.che.ws-agent"
+            ]
+          }
+        },
+        "recipe": {
+          "location": "codenvy/ubuntu_jdk8",
+          "type": "dockerimage"
+        }
+      }
+    },
+    "defaultEnv": "che",
+    "projects": [
+      {
+        "links": [],
+        "name": "che",
+        "attributes": {
+          "contribute_to_branch": [
+            "master"
+          ]
+        },
+        "type": "blank",
+        "source": {
+          "location": "https://github.com/eclipse/che",
+          "type": "git",
+          "parameters": {
+            "branch": "master"
+          }
+        },
+        "path": "/che",
+        "problems": [],
+        "mixins": [
+          "pullrequest"
+        ]
+      },
+      {
+        "links": [],
+        "name": "che_lang",
+        "attributes": {
+          "contribute_to_branch": [
+            "master"
+          ]
+        },
+        "type": "blank",
+        "source": {
+          "location": "https://github.com/eclipse/che/tree/language-server",
+          "type": "git",
+          "parameters": {
+            "branch": "master"
+          }
+        },
+        "path": "/che",
+        "problems": [],
+        "mixins": [
+          "pullrequest"
+        ]
+      }
+    ],
+    "name": "eclipse_5",
+    "commands": [
+      {
+        "commandLine": "echo \"hello\"",
+        "name": "newCustom",
+        "attributes": {
+          "goal": "Run",
+          "previewUrl": ""
+        },
+        "type": "custom"
+      }
+    ],
+    "links": []
+  },
+  "id": "factorywp9t6yrew9vy7pqr",
+  "creator": {
+    "name": "balzer814dev",
+    "email": "balzer814_dev@web.de",
+    "created": 1499939722526,
+    "userId": "usereryk2ovlm6zupf4q"
+  }
+}
