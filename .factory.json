@@ -47,7 +47,7 @@
       },
       {
         "links": [],
-        "name": "che_lang",
+        "name": "simple-project",
         "attributes": {
           "contribute_to_branch": [
             "master"
@@ -55,13 +55,13 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://github.com/eclipse/che/tree/language-server",
+          "location": "https://gitlab.com/benoitf/simple-project",
           "type": "git",
           "parameters": {
             "branch": "master"
           }
         },
-        "path": "/che_lang",
+        "path": "/simple-project",
         "problems": [],
         "mixins": [
           "pullrequest"
