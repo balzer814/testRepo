@@ -7,7 +7,7 @@
         "machines": {
           "ws-machine": {
             "attributes": {
-              "memoryLimitBytes": "2147483648"
+              "memoryLimitBytes": "1147483648"
             },
             "servers": {},
             "agents": [
@@ -61,7 +61,7 @@
             "branch": "master"
           }
         },
-        "path": "/che",
+        "path": "/che_lang",
         "problems": [],
         "mixins": [
           "pullrequest"
