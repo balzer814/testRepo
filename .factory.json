@@ -9,19 +9,7 @@
             "attributes": {
               "memoryLimitBytes": "1147483648"
             },
-            "servers": {
-			
-			  "8080/tcp":{
-				 "url":"http://172.17.0.1:32832",
-				 "ref":"tomcat8",
-				 "properties":{
-				   "internalUrl":"http://172.17.0.1:32832",
-				   "internalAddress":"172.17.0.1:32832"
-				 },
-				 "address":"172.17.0.1:32832",
-				 "protocol":"http"
-
-			},
+            "servers": {},
             "agents": [
               "org.eclipse.che.ws-agent"
             ]
