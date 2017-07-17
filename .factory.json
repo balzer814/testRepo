@@ -47,7 +47,7 @@
       },{
 	  
         "links": [],
-        "name": "factory_repo",
+        "name": "factories",
         "attributes": {
           "contribute_to_branch": [
             "master"
