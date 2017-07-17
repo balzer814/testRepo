@@ -1,6 +1,6 @@
 {
   "v": "4.0",
-  "name": "myFac",
+  "name": "winery_IA_cheFactory",
   "workspace": {
     "environments": {
       "che": {
@@ -55,7 +55,7 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://github.com/balzer814/testRepo/Ubuntu",
+          "location": "https://github.com/balzer814/testRepo/tree/master/Ubuntu",
           "type": "git",
           "parameters": {
             "branch": "master"
@@ -68,28 +68,21 @@
         ]
       }
     ],
-    "name": "eclipse_5",
+    "name": "winery_IA_test",
     "commands": [
       {
-        "commandLine": "echo \"hello\"",
-        "name": "newCustom",
+        "commandLine": "mvn clean install -f ${current.project.path}",
+        "name": "package",
         "attributes": {
           "goal": "Run",
           "previewUrl": ""
         },
-        "type": "custom"
+        "type": "\"mvn\""
       }
     ],
     "links": []
   },
   "policies": {
 	"create" : "perUser"
-  },
-  "id": "factorywp9t6yrew9vy7pqr",
-  "creator": {
-    "name": "balzer814dev",
-    "email": "balzer814_dev@web.de",
-    "created": 1499939722526,
-    "userId": "usereryk2ovlm6zupf4q"
   }
 }
