@@ -33,35 +33,13 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://github.com/balzer814/testRepo/vSphere5.5_IA",
+          "location": "https://github.com/balzer814/winery_che_IA_01",
           "type": "git",
           "parameters": {
             "branch": "master"
           }
         },
         "path": "/vSphere5.5_IA",
-        "problems": [],
-        "mixins": [
-          "pullrequest"
-        ]
-      },
-      {
-        "links": [],
-        "name": "ubuntu",
-        "attributes": {
-          "contribute_to_branch": [
-            "master"
-          ]
-        },
-        "type": "blank",
-        "source": {
-          "location": "https://github.com/balzer814/testRepo/tree/master/Ubuntu",
-          "type": "git",
-          "parameters": {
-            "branch": "master"
-          }
-        },
-        "path": "/ubuntu",
         "problems": [],
         "mixins": [
           "pullrequest"
