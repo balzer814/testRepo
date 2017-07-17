@@ -77,19 +77,12 @@
           "goal": "Run",
           "previewUrl": ""
         },
-        "type": "\"mvn\""
+        "type": "mvn"
       }
     ],
     "links": []
   },
   "policies": {
 	"create" : "perUser"
-  },
-  "id": "factorywp9t6yrew9vy7pqr",
-  "creator": {
-    "name": "balzer814dev",
-    "email": "balzer814_dev@web.de",
-    "created": 1499939722526,
-    "userId": "usereryk2ovlm6zupf4q"
-   }
+  }
 }
