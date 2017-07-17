@@ -25,7 +25,7 @@
     "projects": [
       {
         "links": [],
-        "name": "che",
+        "name": "vSphere5.5_IA",
         "attributes": {
           "contribute_to_branch": [
             "master"
@@ -33,13 +33,13 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://github.com/eclipse/che",
+          "location": "https://github.com/balzer814/testRepo/vSphere5.5_IA",
           "type": "git",
           "parameters": {
             "branch": "master"
           }
         },
-        "path": "/che",
+        "path": "/vSphere5.5_IA",
         "problems": [],
         "mixins": [
           "pullrequest"
@@ -47,7 +47,7 @@
       },
       {
         "links": [],
-        "name": "simple-project",
+        "name": "ubuntu",
         "attributes": {
           "contribute_to_branch": [
             "master"
@@ -55,13 +55,13 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://gitlab.com/benoitf/simple-project",
+          "location": "https://github.com/balzer814/testRepo/Ubuntu",
           "type": "git",
           "parameters": {
             "branch": "master"
           }
         },
-        "path": "/simple-project",
+        "path": "/ubuntu",
         "problems": [],
         "mixins": [
           "pullrequest"
@@ -81,6 +81,9 @@
       }
     ],
     "links": []
+  },
+  "policies": {
+	"create" : "perUser"
   },
   "id": "factorywp9t6yrew9vy7pqr",
   "creator": {
