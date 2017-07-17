@@ -44,28 +44,6 @@
         "mixins": [
           "pullrequest"
         ]
-      },{
-	  
-        "links": [],
-        "name": "factories",
-        "attributes": {
-          "contribute_to_branch": [
-            "master"
-          ]
-        },
-        "type": "blank",
-        "source": {
-          "location": "https://github.com/balzer814/testRepo",
-          "type": "git",
-          "parameters": {
-            "branch": "master"
-          }
-        },
-        "path": "/factories",
-        "problems": [],
-        "mixins": [
-          "pullrequest"
-        ]
       }
     ],
     "name": "winery_IA_test",
