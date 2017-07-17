@@ -62,5 +62,6 @@
   },
   "policies": {
 	"create" : "perUser"
-  }
+  },
+  "id":"1"
 }
