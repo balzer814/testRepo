@@ -1,6 +1,6 @@
 {
   "v": "4.0",
-  "name": "myFac",
+  "name": "winery_IA_cheFactory",
   "workspace": {
     "environments": {
       "che": {
@@ -9,7 +9,18 @@
             "attributes": {
               "memoryLimitBytes": "1147483648"
             },
-            "servers": {},
+            "servers": {
+			
+				  "8080/tcp":{
+					 "url":"http://172.17.0.1:32832",
+					 "ref":"tomcat8",
+					 "properties":{
+					   "internalUrl":"http://172.17.0.1:32832",
+					   "internalAddress":"172.17.0.1:32832"
+					 },
+					 "address":"172.17.0.1:32832",
+					 "protocol":"http"
+				},
             "agents": [
               "org.eclipse.che.ws-agent"
             ]
@@ -55,7 +66,7 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://github.com/balzer814/testRepo/Ubuntu",
+          "location": "https://github.com/balzer814/testRepo/tree/master/Ubuntu",
           "type": "git",
           "parameters": {
             "branch": "master"
@@ -68,28 +79,21 @@
         ]
       }
     ],
-    "name": "eclipse_5",
+    "name": "winery_IA_test",
     "commands": [
       {
-        "commandLine": "echo \"hello\"",
-        "name": "newCustom",
+        "commandLine": "mvn clean install -f ${current.project.path}",
+        "name": "package",
         "attributes": {
           "goal": "Run",
           "previewUrl": ""
         },
-        "type": "custom"
+        "type": "\"mvn\""
       }
     ],
     "links": []
   },
   "policies": {
 	"create" : "perUser"
-  },
-  "id": "factorywp9t6yrew9vy7pqr",
-  "creator": {
-    "name": "balzer814dev",
-    "email": "balzer814_dev@web.de",
-    "created": 1499939722526,
-    "userId": "usereryk2ovlm6zupf4q"
   }
 }
