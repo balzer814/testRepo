@@ -44,12 +44,34 @@
         "mixins": [
           "pullrequest"
         ]
+      },{
+	  
+        "links": [],
+        "name": "factory_repo",
+        "attributes": {
+          "contribute_to_branch": [
+            "master"
+          ]
+        },
+        "type": "blank",
+        "source": {
+          "location": "https://github.com/balzer814/testRepo",
+          "type": "git",
+          "parameters": {
+            "branch": "master"
+          }
+        },
+        "path": "/factories",
+        "problems": [],
+        "mixins": [
+          "pullrequest"
+        ]
       }
     ],
     "name": "winery_IA_test",
     "commands": [
       {
-        "commandLine": "mvn clean install -f ${current.project.path}",
+        "commandLine": "mvn clean package -f ${explorer.current.file.path}",
         "name": "package",
         "attributes": {
           "goal": "Run",
