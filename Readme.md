@@ -8,11 +8,13 @@ The created factory can used to create a new workspace will be created in a user
 * see http://www.eclipse.org/che/docs/factory/json-reference/index.html
 * To create/test a factorie it's best to use the codenvy IDE https://codenvy.io/dashboard/#/factories and than copying the resulting factory.json 
 * To prevent creating new workspaces every time the user clicks on the link insert:
+		
 		'"policies": {
 			"create" : "perUser"
 		}'
 	  in the .factory.json
 * To provide custom commands use 
+		
 		'"commands": [
 		  {
 			"commandLine": "mvn clean package -f ${explorer.current.file.path}",
