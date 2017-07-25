@@ -1,6 +1,6 @@
 ## Repository Structure
-To open a custom project in Eclipse Chea factory Json must be created in a designated folder of the repo
- e.g.: ArtifactType_War/.factory.json
+To open a custom project in Eclipse Che factory Json must be created in a the repo
+ e.g.: ArtifactType_War/.factory.json *(see issues)* 
 The created factory can used to create a new workspace will be created in a user space(you have to login with OAuth) on codenvy
 
 
@@ -36,6 +36,6 @@ The created factory can used to create a new workspace will be created in a user
 	to use only one workspace and not create a new one every time the user clicks on a different link 
 
 ## Issues
-* Eclipse che seems to lack the ability to handle Folders containing '%' #2337
+* Eclipse che seems to lack the ability to handle Folders containing '%' https://github.com/codenvy/codenvy/issues/2337
 * Finding a way to use multiple Factorys scince the codenvy always trys to find a factory in the root folder
 	* maybe using the REST API and uploading a factory direktly to eclipse che and than using the *hashvalue* to build the link could be an option
