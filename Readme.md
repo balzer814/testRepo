@@ -37,4 +37,5 @@ The created factory can used to create a new workspace will be created in a user
 
 ## Issues
 * Eclipse che seems to lack the ability to handle Folders containing '%' #2337
-* Finding a way to use multiple Factorys scince the codenvy always trys to find a factory in the root folder 
+* Finding a way to use multiple Factorys scince the codenvy always trys to find a factory in the root folder
+	* maybe using the REST API and uploading a factory direktly to eclipse che and than using the *hashvalue* to build the link could be an option
