@@ -25,7 +25,7 @@
     "projects": [
       {
         "links": [],
-        "name": "vSphere5.5_IA",
+        "name": "winery",
         "attributes": {
           "contribute_to_branch": [
             "master"
@@ -33,13 +33,13 @@
         },
         "type": "blank",
         "source": {
-          "location": "https://github.com/balzer814/winery_che_IA_01",
+          "location": "https://github.com/winery/test-repository",
           "type": "git",
           "parameters": {
-            "branch": "master"
+            "branch": "black"
           }
         },
-        "path": "/vSphere5.5_IA",
+        "path": "/winery",
         "problems": [],
         "mixins": [
           "pullrequest"
@@ -47,6 +47,8 @@
       }
     ],
     "name": "winery_IA_test",
+	"id":"winery_factorys",
+	"namespace" : "winery.factories",
     "commands": [
       {
         "commandLine": "mvn clean package -f ${explorer.current.file.path}",
@@ -63,5 +65,5 @@
   "policies": {
 	"create" : "perUser"
   },
-  "id":"1"
+  "id":"winery.factories"
 }
